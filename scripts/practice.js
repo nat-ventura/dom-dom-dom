@@ -2,6 +2,14 @@ var THUMBNAIL_SELECTOR_STRING = "[data-image-role='trigger']";
 var TARGET_SELECTOR_STRING = "[data-image-role='target']";
 var TITLE_SELECTOR_STRING = "[data-image-role='title']";
 
+function setDetails(imageUrl, titleText) {
+    var detailImage = document.querySelector(TARGET_SELECTOR_STRING);
+    detailImage.setAttribute('src', imageUrl);
+
+    var detailTitle = document.querySelector(TITLE_SELECTOR_STRING);
+    detailTitle.textContent = titleText;
+}
+
 function thumbImage(thumbnail) {
     return thumbnail.getAttribute('data-image-url');
 }
@@ -24,7 +32,7 @@ function thumbClicker(thumb) {
 function makeThumbArray() {
     var thumbnails = document.querySelectorAll(THUMBNAIL_SELECTOR_STRING);
     var thumbArray = [].slice.call(thumbnails);
-    // it's okay to make this an anonymous function because
+    // it's okay to make this an short function because
     // it has such a specific use that you only use once
     return thumbArray;
 }
