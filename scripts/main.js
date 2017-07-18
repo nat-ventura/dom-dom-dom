@@ -34,3 +34,27 @@ navs.forEach(function (nav) {
 // toggling
 var nav = document.querySelectorAll('.navContainer a')[0];
 nav.classList.toggle('active');
+
+// LISTENING FOR EVENTS
+
+var navs = document.querySelectorAll('.navContainer a');
+var target = document.querySelector('[data-target="main-image"]');
+navs.forEach(function (nav) {
+    nav.addEventListener('click', function (event) {
+        event.preventDefault();
+        target.setAttribute('src', nav.getAttribute('href'));
+    });
+});
+// first you want to make sure that the default element,
+// like going to another page-- DOESN'T HAPPEN
+// you stop that 'dead in it\'s tracks' by .preventDefault()
+// stops the browser from doing what it would normally do
+
+// later will do this with forms-- tell the DOM not to send this to a server
+
+// with a anchor tags, we're telling them NOT to follow the link
+
+// you also set the source attribute to the attribute of the nav
+// when you have a reference to an element, you use eventListener
+// to create an association between the event and ______
+// what were coordinates of the mouse? did they right click?
