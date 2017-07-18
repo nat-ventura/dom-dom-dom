@@ -87,6 +87,9 @@ main();
 
 // var trigger = document.querySelector(TRIGGER_SELECTOR_STRING);
 
-
-
 // console.log(thumbnailList);
+
+// comment out all of your thumbnails
+// instead, keep the data in an array in your js File
+// then write functions that will build the nav elements,
+// set their properties, and then attach them to the live dom
