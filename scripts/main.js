@@ -9,7 +9,5 @@ var theContainer = document.querySelectorAll('.container');
 
 // avoid this mysterious thing by using data attributes!
 
-<a href="otter.jpg" data-target="trigger">Otter me bro</a>
-<div class="container" data-target="top-level-container">
-    {/*stuff here  */}
-</div>
+// write your own functions to fetch from the DOM for you
+// you'll write things that write DOM elements, configure them
