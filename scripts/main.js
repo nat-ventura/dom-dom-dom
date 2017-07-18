@@ -58,3 +58,23 @@ navs.forEach(function (nav) {
 // when you have a reference to an element, you use eventListener
 // to create an association between the event and ______
 // what were coordinates of the mouse? did they right click?
+
+// NODELIST
+
+// NodeList objects are collections of nodes returned by..
+// document.querySelector(all);
+
+// [].slice.call
+
+function toArray(nodeList) {
+    var arr = nodeList;
+    if (nodeList.forEach === undefined) {
+        arr = [].slice.call(nodeList);
+    }
+
+    return arr;
+}
+
+// converts something that's like an array (nodeList) into a real array
+// it isn't a real array because missing map/filter/reduce-- important array methods
+// they have a forEach in some browsers, but that's it....
