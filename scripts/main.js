@@ -66,14 +66,14 @@ navs.forEach(function (nav) {
 
 // [].slice.call
 
-function toArray(nodeList) {
-    var arr = nodeList;
-    if (nodeList.forEach === undefined) {
-        arr = [].slice.call(nodeList);
-    }
+// function toArray(nodeList) {
+//     var arr = nodeList;
+//     if (nodeList.forEach === undefined) {
+//         arr = [].slice.call(nodeList);
+//     }
 
-    return arr;
-}
+//     return arr;
+// }
 
 // converts something that's like an array (nodeList) into a real array
 // it isn't a real array because missing map/filter/reduce-- important array methods

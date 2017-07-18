@@ -42,6 +42,28 @@ function main() {
     thumbnails.forEach(thumbClicker);
 }
 
+function range(min, max) {
+  var arr = [];
+  for (var i = min; i < max; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+var thumbRange = range(0, thumbnails.length);
+
+function shuffle(array) {
+    array.forEach( function(value, i, array) {
+        j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    });
+    return array;
+}
+
+var shuffledThumbs = shuffle(thumbRange);
+// put shuffledThumbs[0] into whatever it is that chooses what to display the otter image
+// something to do with target selector string
+
 main();
 
 // // converts thumbnail nodeList into array
