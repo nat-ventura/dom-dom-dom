@@ -61,8 +61,8 @@ navs.forEach(function (nav) {
 
 // NODELIST
 
-// NodeList objects are collections of nodes returned by..
-// document.querySelector(all);
+// !!!! NodeList objects are collections of nodes returned by..
+// document.querySelector(all); !!!!
 
 // [].slice.call
 
@@ -78,3 +78,17 @@ function toArray(nodeList) {
 // converts something that's like an array (nodeList) into a real array
 // it isn't a real array because missing map/filter/reduce-- important array methods
 // they have a forEach in some browsers, but that's it....
+
+// RECOMMENDED STRUCTURE FOR JS FILES
+
+// 'constants'
+// variables
+// helper functions
+// main functions
+
+// GOOD FUNCTIONS TO USE FOR OTTER SLIDESHOW CHALLENGE
+// setdetails
+// detailtitle
+// imagefromthumb
+// titlefromthumb
+// setdetailsfromthumb
