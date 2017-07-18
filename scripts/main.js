@@ -11,3 +11,12 @@ var theContainer = document.querySelectorAll('.container');
 
 // write your own functions to fetch from the DOM for you
 // you'll write things that write DOM elements, configure them
+
+// all this assuming that you have an array of `navs` right before this
+var navContainer = document.querySelector('.nav-selector');
+navs.forEach(function (nav) {
+    var navElement = document.createElement('a');
+    navElement.setAttribute('href',nav.href);
+    navElement.textContent = nav.text;
+    navContainer.appendChild(navElement);
+});
