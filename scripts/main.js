@@ -20,3 +20,17 @@ navs.forEach(function (nav) {
     navElement.textContent = nav.text;
     navContainer.appendChild(navElement);
 });
+
+// adding
+var nav = document.querySelectorAll('.navContainer a')[0];
+nav.classList.add('active');
+
+// removing
+var navs = document.querySelectorAll('.navContainer a');
+navs.forEach(function (nav) {
+    nav.classList.remove('active');
+});
+
+// toggling
+var nav = document.querySelectorAll('.navContainer a')[0];
+nav.classList.toggle('active');
