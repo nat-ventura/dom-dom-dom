@@ -94,11 +94,11 @@ function toArray(nodeList) {
 // setdetailsfromthumb
 
 // add thumb click handler
-thumb.addEventListener('click', function(event) {
-    event.preventDefault();
-    setDetailsFromThumb(thumb);
-});
-}
+// thumb.addEventListener('click', function(event) {
+//     event.preventDefault();
+//     setDetailsFromThumb(thumb);
+// });
+// }
 
 // get thumbnails array
 // var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
